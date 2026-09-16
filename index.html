@@ -1,108 +1,108 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOKSLI - Galeri Kenangan Kelas</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Menggunakan Font Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOKSLI | Platform Dokumen Hitam Putih</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
-    <header>
-        <div class="logo">DOKSLI<span>.CLASS</span></div>
-        <nav>
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#gallery">Galeri</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-            </ul>
-        </nav>
-    </header>
+  <nav class="navbar">
+    <div class="nav-logo">DOKSLI</div>
+    <div class="nav-search">
+      <input type="text" placeholder="Cari dokumen...">
+      <button>Cari</button>
+    </div>
+    <div class="nav-menu">
+      <a href="#">Beranda</a>
+      <a href="#">Upload</a>
+      <a href="#">Akun</a>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Selamat Datang di <span>DOKSLI</span></h1>
-            <p>Dokumentasi Asli & Momen Tak Terlupakan Kelas XII IPA 1 (Ubah sesuai kelasmu)</p>
-            <a href="#gallery" class="btn">Lihat Dokumentasi</a>
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>Kategori</h3>
+      <ul>
+        <li class="active">Semua Dokumen</li>
+        <li>Tugas Sekolah</li>
+        <li>Materi Kuliah</li>
+        <li>Rangkuman</li>
+        <li>Presentasi</li>
+      </ul>
+      <h3>Filter</h3>
+      <label><input type="checkbox"> PDF</label>
+      <label><input type="checkbox"> DOCX</label>
+      <label><input type="checkbox"> PPTX</label>
+    </aside>
+
+    <main class="content">
+      <section class="upload-section">
+        <h2>Upload Dokumen Baru</h2>
+        <div class="upload-drop">
+          <p>Drag & Drop file ke sini</p>
+          <span>atau</span>
+          <label for="file" class="btn-primary">Pilih dari Komputer</label>
+          <input type="file" id="file" hidden>
         </div>
-    </section>
+      </section>
 
-    <!-- Galeri Doksli -->
-    <section id="gallery" class="gallery-container">
-        <h2>Galeri Doksli</h2>
-        <p class="subtitle">Kumpulan foto candid, kegiatan, dan kebersamaan kita.</p>
-
-        <div class="grid-gallery">
-            <!-- Kartu Foto 1 -->
-            <div class="card">
-                <img src="https://picsum.photos/400/300?random=1" alt="Foto Kelas">
-                <div class="card-info">
-                    <h3>Kerja Kelompok</h3>
-                    <p>Momen pusing bareng nugas sejarah.</p>
-                </div>
-            </div>
-
-            <!-- Kartu Foto 2 -->
-            <div class="card">
-                <img src="https://picsum.photos/400/300?random=2" alt="Foto Kelas">
-                <div class="card-info">
-                    <h3>Classmeeting 2023</h3>
-                    <p>Juara 1 Lomba Tarik Tambang!</p>
-                </div>
-            </div>
-
-            <!-- Kartu Foto 3 -->
-            <div class="card">
-                <img src="https://picsum.photos/400/300?random=3" alt="Foto Kelas">
-                <div class="card-info">
-                    <h3>Candid Jam Kosong</h3>
-                    <p>Tidur nyenyak di pojokan kelas.</p>
-                </div>
-            </div>
-
-            <!-- Kartu Foto 4 -->
-            <div class="card">
-                <img src="https://picsum.photos/400/300?random=4" alt="Foto Kelas">
-                <div class="card-info">
-                    <h3>Ulang Tahun Wali Kelas</h3>
-                    <p>Surprise party yang hampir gagal.</p>
-                </div>
-            </div>
-
-            <!-- Kartu Foto 5 -->
-            <div class="card">
-                <img src="https://picsum.photos/400/300?random=5" alt="Foto Kelas">
-                <div class="card-info">
-                    <h3>Kunjungan Museum</h3>
-                    <p>Study tour yang penuh kenangan.</p>
-                </div>
-            </div>
-
-            <!-- Kartu Foto 6 -->
-            <div class="card">
-                <img src="https://picsum.photos/400/300?random=6" alt="Foto Kelas">
-                <div class="card-info">
-                    <h3>Bukber Angkatan</h3>
-                    <p>Momen kumpul lengkap satu kelas.</p>
-                </div>
-            </div>
+      <section class="docs-section">
+        <div class="section-header">
+          <h2>Dokumen Terbaru</h2>
+          <select>
+            <option>Urutkan: Terbaru</option>
+            <option>Urutkan: Nama A-Z</option>
+            <option>Urutkan: Ukuran</option>
+          </select>
         </div>
-    </section>
 
-    <!-- Tentang Kelas -->
-    <section id="about" class="about">
-        <h2>Tentang Doksli Ini</h2>
-        <p>Website ini dibuat untuk menyimpan seluruh kenangan asli (doksli) tanpa ada yang terlewat. Dari yang estetik sampai yang kocak, semuanya ada di sini!</p>
-    </section>
+        <div class="doc-grid">
+          <div class="doc-card">
+            <div class="doc-icon">PDF</div>
+            <div class="doc-body">
+              <h4>Materi PJOK Kelas 11.pdf</h4>
+              <p>16 Sep 2026 • 2.4 MB • 120 Download</p>
+            </div>
+            <a href="#" class="btn-outline">Download</a>
+          </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 DOKSLI CLASS. Dibuat dengan ❤️ oleh Warga Kelas.</p>
-    </footer>
+          <div class="doc-card">
+            <div class="doc-icon">DOC</div>
+            <div class="doc-body">
+              <h4>Rangkuman Sejarah.docx</h4>
+              <p>15 Sep 2026 • 1.1 MB • 89 Download</p>
+            </div>
+            <a href="#" class="btn-outline">Download</a>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-icon">PPT</div>
+            <div class="doc-body">
+              <h4>Presentasi Ekonomi.pptx</h4>
+              <p>14 Sep 2026 • 5.6 MB • 210 Download</p>
+            </div>
+            <a href="#" class="btn-outline">Download</a>
+          </div>
+
+          <div class="doc-card">
+            <div class="doc-icon">PDF</div>
+            <div class="doc-body">
+              <h4>Soal UTS Matematika.pdf</h4>
+              <p>13 Sep 2026 • 3.2 MB • 540 Download</p>
+            </div>
+            <a href="#" class="btn-outline">Download</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 DOKSLI. Platform Dokumen Minimalis Hitam Putih</p>
+  </footer>
 
 </body>
+</html></body>
                   </html>
